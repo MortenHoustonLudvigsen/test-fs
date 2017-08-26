@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rmdir() should emit one 'rmdir' event for a physical directory, that is empty 1`] = `
+Array [
+  <test-files/emptydir>
+    name.....: 'emptydir'
+    dir......: 'test-files'
+    type.....: 'none'
+    version..: 2,
+]
+`;
+
+exports[`rmdir() should emit one 'rmdir' event for a virtual directory, that is empty 1`] = `
+Array [
+  <test-files/dummyDir>
+    name.....: 'dummyDir'
+    dir......: 'test-files'
+    type.....: 'none'
+    version..: 3,
+]
+`;
+
+exports[`rmdir() should remove a physical directory, that is empty 1`] = `
+<test-files/emptydir>
+    name.....: 'emptydir'
+    dir......: 'test-files'
+    type.....: 'none'
+    version..: 2
+`;
+
+exports[`rmdir() should remove a virtual directory, that is empty 1`] = `
+<test-files/dummyDir>
+    name.....: 'dummyDir'
+    dir......: 'test-files'
+    type.....: 'none'
+    version..: 3
+`;
+
+exports[`rmdirSync() should emit one 'rmdir' event for a physical directory, that is empty 1`] = `
+Array [
+  <test-files/emptydir>
+    name.....: 'emptydir'
+    dir......: 'test-files'
+    type.....: 'none'
+    version..: 2,
+]
+`;
+
+exports[`rmdirSync() should emit one 'rmdir' event for a virtual directory, that is empty 1`] = `
+Array [
+  <test-files/dummyDir>
+    name.....: 'dummyDir'
+    dir......: 'test-files'
+    type.....: 'none'
+    version..: 3,
+]
+`;
+
+exports[`rmdirSync() should remove a physical directory, that is empty 1`] = `
+<test-files/emptydir>
+    name.....: 'emptydir'
+    dir......: 'test-files'
+    type.....: 'none'
+    version..: 2
+`;
+
+exports[`rmdirSync() should remove a virtual directory, that is empty 1`] = `
+<test-files/dummyDir>
+    name.....: 'dummyDir'
+    dir......: 'test-files'
+    type.....: 'none'
+    version..: 3
+`;

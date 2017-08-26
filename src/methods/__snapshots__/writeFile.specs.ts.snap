@@ -1,0 +1,157 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`writeFile() should emit one 'writeFile' event for a file in a physical directory 1`] = `
+Array [
+  <test-files/dummy.txt>
+    name.....: 'dummy.txt'
+    dir......: 'test-files'
+    type.....: 'file'
+    version..: 2
+    mode.....: 0o777
+    statCount: 0
+    readCount: 0
+    contents.: 'dummy',
+]
+`;
+
+exports[`writeFile() should emit one 'writeFile' event for a file in a virtual directory 1`] = `
+Array [
+  <test-files/dummyDir/dummy.txt>
+    name.....: 'dummy.txt'
+    dir......: 'test-files/dummyDir'
+    type.....: 'file'
+    version..: 2
+    mode.....: 0o777
+    statCount: 0
+    readCount: 0
+    contents.: 'dummy',
+]
+`;
+
+exports[`writeFile() should emit one 'writeFile' event for a file, that exists in the physical file system 1`] = `
+Array [
+  <test-files/file.txt>
+    name.....: 'file.txt'
+    dir......: 'test-files'
+    type.....: 'file'
+    version..: 2
+    mode.....: 0o100666
+    statCount: 0
+    readCount: 0
+    contents.: 'dummy',
+]
+`;
+
+exports[`writeFile() should write a file in a physical directory 1`] = `
+<test-files/dummy.txt>
+    name.....: 'dummy.txt'
+    dir......: 'test-files'
+    type.....: 'file'
+    version..: 2
+    mode.....: 0o777
+    statCount: 0
+    readCount: 0
+    contents.: 'dummy'
+`;
+
+exports[`writeFile() should write a file in a virtual directory 1`] = `
+<test-files/dummyDir/dummy.txt>
+    name.....: 'dummy.txt'
+    dir......: 'test-files/dummyDir'
+    type.....: 'file'
+    version..: 2
+    mode.....: 0o777
+    statCount: 0
+    readCount: 0
+    contents.: 'dummy'
+`;
+
+exports[`writeFile() should write a file, that exists in the physical file system 1`] = `
+<test-files/file.txt>
+    name.....: 'file.txt'
+    dir......: 'test-files'
+    type.....: 'file'
+    version..: 2
+    mode.....: 0o100666
+    statCount: 0
+    readCount: 0
+    contents.: 'dummy'
+`;
+
+exports[`writeFileSync() should emit one 'writeFile' event for a file in a physical directory 1`] = `
+Array [
+  <test-files/dummy.txt>
+    name.....: 'dummy.txt'
+    dir......: 'test-files'
+    type.....: 'file'
+    version..: 2
+    mode.....: 0o777
+    statCount: 0
+    readCount: 0
+    contents.: 'dummy',
+]
+`;
+
+exports[`writeFileSync() should emit one 'writeFile' event for a file in a virtual directory 1`] = `
+Array [
+  <test-files/dummyDir/dummy.txt>
+    name.....: 'dummy.txt'
+    dir......: 'test-files/dummyDir'
+    type.....: 'file'
+    version..: 2
+    mode.....: 0o777
+    statCount: 0
+    readCount: 0
+    contents.: 'dummy',
+]
+`;
+
+exports[`writeFileSync() should emit one 'writeFile' event for a file, that exists in the physical file system 1`] = `
+Array [
+  <test-files/file.txt>
+    name.....: 'file.txt'
+    dir......: 'test-files'
+    type.....: 'file'
+    version..: 2
+    mode.....: 0o100666
+    statCount: 0
+    readCount: 0
+    contents.: 'dummy',
+]
+`;
+
+exports[`writeFileSync() should write a file in a physical directory 1`] = `
+<test-files/dummy.txt>
+    name.....: 'dummy.txt'
+    dir......: 'test-files'
+    type.....: 'file'
+    version..: 2
+    mode.....: 0o777
+    statCount: 0
+    readCount: 0
+    contents.: 'dummy'
+`;
+
+exports[`writeFileSync() should write a file in a virtual directory 1`] = `
+<test-files/dummyDir/dummy.txt>
+    name.....: 'dummy.txt'
+    dir......: 'test-files/dummyDir'
+    type.....: 'file'
+    version..: 2
+    mode.....: 0o777
+    statCount: 0
+    readCount: 0
+    contents.: 'dummy'
+`;
+
+exports[`writeFileSync() should write a file, that exists in the physical file system 1`] = `
+<test-files/file.txt>
+    name.....: 'file.txt'
+    dir......: 'test-files'
+    type.....: 'file'
+    version..: 2
+    mode.....: 0o100666
+    statCount: 0
+    readCount: 0
+    contents.: 'dummy'
+`;

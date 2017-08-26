@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot() should create a snapshot 1`] = `
+Object {
+  "dummy/dummy3.txt": "This is a nested dummy file",
+  "dummy/dummy4.txt": [255,254,253,42,43,44],
+  "dummy1.txt": "This is a dummy file",
+  "dummy2.txt": "This is also a dummy file",
+}
+`;

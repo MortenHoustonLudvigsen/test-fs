@@ -1,0 +1,221 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`unlink() should delete a directory, that is not empty 1`] = `
+<test-files>
+    name.....: 'test-files'
+    dir......: '.'
+    type.....: 'none'
+    version..: 2
+`;
+
+exports[`unlink() should delete a physical directory, that is empty 1`] = `
+<test-files/emptydir>
+    name.....: 'emptydir'
+    dir......: 'test-files'
+    type.....: 'none'
+    version..: 2
+`;
+
+exports[`unlink() should delete a physical file 1`] = `
+<test-files/file.txt>
+    name.....: 'file.txt'
+    dir......: 'test-files'
+    type.....: 'none'
+    version..: 2
+`;
+
+exports[`unlink() should delete a virtual directory, that is empty 1`] = `
+<test-files/dummyDir>
+    name.....: 'dummyDir'
+    dir......: 'test-files'
+    type.....: 'none'
+    version..: 3
+`;
+
+exports[`unlink() should delete a virtual file 1`] = `
+<test-files/dummy.txt>
+    name.....: 'dummy.txt'
+    dir......: 'test-files'
+    type.....: 'none'
+    version..: 3
+`;
+
+exports[`unlink() should emit 5 'unlink' events for a directory, that is not empty 1`] = `
+Array [
+  <test-files/emptydir>
+    name.....: 'emptydir'
+    dir......: 'test-files'
+    type.....: 'none'
+    version..: 2,
+  <test-files/file.bin>
+    name.....: 'file.bin'
+    dir......: 'test-files'
+    type.....: 'none'
+    version..: 2,
+  <test-files/file.txt>
+    name.....: 'file.txt'
+    dir......: 'test-files'
+    type.....: 'none'
+    version..: 2,
+  <test-files/file2.txt>
+    name.....: 'file2.txt'
+    dir......: 'test-files'
+    type.....: 'none'
+    version..: 2,
+  <test-files>
+    name.....: 'test-files'
+    dir......: '.'
+    type.....: 'none'
+    version..: 2,
+]
+`;
+
+exports[`unlink() should emit one 'unlink' event for a physical directory, that is empty 1`] = `
+Array [
+  <test-files/emptydir>
+    name.....: 'emptydir'
+    dir......: 'test-files'
+    type.....: 'none'
+    version..: 2,
+]
+`;
+
+exports[`unlink() should emit one 'unlink' event for a physical file 1`] = `
+Array [
+  <test-files/file.txt>
+    name.....: 'file.txt'
+    dir......: 'test-files'
+    type.....: 'none'
+    version..: 2,
+]
+`;
+
+exports[`unlink() should emit one 'unlink' event for a virtual directory, that is empty 1`] = `
+Array [
+  <test-files/dummyDir>
+    name.....: 'dummyDir'
+    dir......: 'test-files'
+    type.....: 'none'
+    version..: 3,
+]
+`;
+
+exports[`unlink() should emit one 'unlink' event for a virtual file 1`] = `
+Array [
+  <test-files/dummy.txt>
+    name.....: 'dummy.txt'
+    dir......: 'test-files'
+    type.....: 'none'
+    version..: 3,
+]
+`;
+
+exports[`unlinkSync() should delete a directory, that is not empty 1`] = `
+<test-files>
+    name.....: 'test-files'
+    dir......: '.'
+    type.....: 'none'
+    version..: 2
+`;
+
+exports[`unlinkSync() should delete a physical directory, that is empty 1`] = `
+<test-files/emptydir>
+    name.....: 'emptydir'
+    dir......: 'test-files'
+    type.....: 'none'
+    version..: 2
+`;
+
+exports[`unlinkSync() should delete a physical file 1`] = `
+<test-files/file.txt>
+    name.....: 'file.txt'
+    dir......: 'test-files'
+    type.....: 'none'
+    version..: 2
+`;
+
+exports[`unlinkSync() should delete a virtual directory, that is empty 1`] = `
+<test-files/dummyDir>
+    name.....: 'dummyDir'
+    dir......: 'test-files'
+    type.....: 'none'
+    version..: 3
+`;
+
+exports[`unlinkSync() should delete a virtual file 1`] = `
+<test-files/dummy.txt>
+    name.....: 'dummy.txt'
+    dir......: 'test-files'
+    type.....: 'none'
+    version..: 3
+`;
+
+exports[`unlinkSync() should emit 5 'unlink' events for a directory, that is not empty 1`] = `
+Array [
+  <test-files/emptydir>
+    name.....: 'emptydir'
+    dir......: 'test-files'
+    type.....: 'none'
+    version..: 2,
+  <test-files/file.bin>
+    name.....: 'file.bin'
+    dir......: 'test-files'
+    type.....: 'none'
+    version..: 2,
+  <test-files/file.txt>
+    name.....: 'file.txt'
+    dir......: 'test-files'
+    type.....: 'none'
+    version..: 2,
+  <test-files/file2.txt>
+    name.....: 'file2.txt'
+    dir......: 'test-files'
+    type.....: 'none'
+    version..: 2,
+  <test-files>
+    name.....: 'test-files'
+    dir......: '.'
+    type.....: 'none'
+    version..: 2,
+]
+`;
+
+exports[`unlinkSync() should emit one 'unlink' event for a physical directory, that is empty 1`] = `
+Array [
+  <test-files/emptydir>
+    name.....: 'emptydir'
+    dir......: 'test-files'
+    type.....: 'none'
+    version..: 2,
+]
+`;
+
+exports[`unlinkSync() should emit one 'unlink' event for a physical file 1`] = `
+Array [
+  <test-files/file.txt>
+    name.....: 'file.txt'
+    dir......: 'test-files'
+    type.....: 'none'
+    version..: 2,
+]
+`;
+
+exports[`unlinkSync() should emit one 'unlink' event for a virtual directory, that is empty 1`] = `
+Array [
+  <test-files/dummyDir>
+    name.....: 'dummyDir'
+    dir......: 'test-files'
+    type.....: 'none'
+    version..: 3,
+]
+`;
+
+exports[`unlinkSync() should emit one 'unlink' event for a virtual file 1`] = `
+Array [
+  <test-files/dummy.txt>
+    name.....: 'dummy.txt'
+    dir......: 'test-files'
+    type.....: 'none'
+    version..: 3,
+]
+`;

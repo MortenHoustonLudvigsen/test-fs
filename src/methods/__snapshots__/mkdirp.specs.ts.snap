@@ -1,0 +1,235 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`mkdirp() should emit 0 'mkdir' events for a directory, that exists in the physical file system 1`] = `[]`;
+
+exports[`mkdirp() should emit 2 'mkdir' events for an entry, in a directory, that does not exist 1`] = `
+Array [
+  <test-files/dummyDir>
+    name.....: 'dummyDir'
+    dir......: 'test-files'
+    type.....: 'directory'
+    version..: 2
+    mode.....: 0o777
+    statCount: 0
+    readCount: 0,
+  <test-files/dummyDir/dummyDir2>
+    name.....: 'dummyDir2'
+    dir......: 'test-files/dummyDir'
+    type.....: 'directory'
+    version..: 2
+    mode.....: 0o777
+    statCount: 0
+    readCount: 0,
+]
+`;
+
+exports[`mkdirp() should emit one 'mkdir' event for an entry in a physical directory 1`] = `
+Array [
+  <test-files/dummyDir>
+    name.....: 'dummyDir'
+    dir......: 'test-files'
+    type.....: 'directory'
+    version..: 2
+    mode.....: 0o777
+    statCount: 0
+    readCount: 0,
+]
+`;
+
+exports[`mkdirp() should emit one 'mkdir' event for an entry in a virtual directory 1`] = `
+Array [
+  <test-files/dummyDir/dummyDir2>
+    name.....: 'dummyDir2'
+    dir......: 'test-files/dummyDir'
+    type.....: 'directory'
+    version..: 2
+    mode.....: 0o777
+    statCount: 0
+    readCount: 0,
+]
+`;
+
+exports[`mkdirp() should make a directory for a directory, that exists in the physical file system 1`] = `
+<test-files>
+    name.....: 'test-files'
+    dir......: '.'
+    type.....: 'directory'
+    version..: 1
+    mode.....: 0o40666
+    statCount: 0
+    readCount: 0
+
+    <test-files/emptydir>
+        name.....: 'emptydir'
+        dir......: 'test-files'
+        type.....: 'initial'
+        version..: 0
+
+    <test-files/file.bin>
+        name.....: 'file.bin'
+        dir......: 'test-files'
+        type.....: 'initial'
+        version..: 0
+
+    <test-files/file.txt>
+        name.....: 'file.txt'
+        dir......: 'test-files'
+        type.....: 'initial'
+        version..: 0
+
+    <test-files/file2.txt>
+        name.....: 'file2.txt'
+        dir......: 'test-files'
+        type.....: 'initial'
+        version..: 0
+`;
+
+exports[`mkdirp() should make a directory for an entry in a physical directory 1`] = `
+<test-files/dummyDir>
+    name.....: 'dummyDir'
+    dir......: 'test-files'
+    type.....: 'directory'
+    version..: 2
+    mode.....: 0o777
+    statCount: 0
+    readCount: 0
+`;
+
+exports[`mkdirp() should make a directory for an entry in a virtual directory 1`] = `
+<test-files/dummyDir/dummyDir2>
+    name.....: 'dummyDir2'
+    dir......: 'test-files/dummyDir'
+    type.....: 'directory'
+    version..: 2
+    mode.....: 0o777
+    statCount: 0
+    readCount: 0
+`;
+
+exports[`mkdirp() should make a directory for an entry, in a directory, that does not exist 1`] = `
+<test-files/dummyDir/dummyDir2>
+    name.....: 'dummyDir2'
+    dir......: 'test-files/dummyDir'
+    type.....: 'directory'
+    version..: 2
+    mode.....: 0o777
+    statCount: 0
+    readCount: 0
+`;
+
+exports[`mkdirpSync() should emit 0 'mkdir' events for a directory, that exists in the physical file system 1`] = `[]`;
+
+exports[`mkdirpSync() should emit 2 'mkdir' events for an entry, in a directory, that does not exist 1`] = `
+Array [
+  <test-files/dummyDir>
+    name.....: 'dummyDir'
+    dir......: 'test-files'
+    type.....: 'directory'
+    version..: 2
+    mode.....: 0o777
+    statCount: 0
+    readCount: 0,
+  <test-files/dummyDir/dummyDir2>
+    name.....: 'dummyDir2'
+    dir......: 'test-files/dummyDir'
+    type.....: 'directory'
+    version..: 2
+    mode.....: 0o777
+    statCount: 0
+    readCount: 0,
+]
+`;
+
+exports[`mkdirpSync() should emit one 'mkdir' event for an entry in a physical directory 1`] = `
+Array [
+  <test-files/dummyDir>
+    name.....: 'dummyDir'
+    dir......: 'test-files'
+    type.....: 'directory'
+    version..: 2
+    mode.....: 0o777
+    statCount: 0
+    readCount: 0,
+]
+`;
+
+exports[`mkdirpSync() should emit one 'mkdir' event for an entry in a virtual directory 1`] = `
+Array [
+  <test-files/dummyDir/dummyDir2>
+    name.....: 'dummyDir2'
+    dir......: 'test-files/dummyDir'
+    type.....: 'directory'
+    version..: 2
+    mode.....: 0o777
+    statCount: 0
+    readCount: 0,
+]
+`;
+
+exports[`mkdirpSync() should make a directory for a directory, that exists in the physical file system 1`] = `
+<test-files>
+    name.....: 'test-files'
+    dir......: '.'
+    type.....: 'directory'
+    version..: 1
+    mode.....: 0o40666
+    statCount: 0
+    readCount: 0
+
+    <test-files/emptydir>
+        name.....: 'emptydir'
+        dir......: 'test-files'
+        type.....: 'initial'
+        version..: 0
+
+    <test-files/file.bin>
+        name.....: 'file.bin'
+        dir......: 'test-files'
+        type.....: 'initial'
+        version..: 0
+
+    <test-files/file.txt>
+        name.....: 'file.txt'
+        dir......: 'test-files'
+        type.....: 'initial'
+        version..: 0
+
+    <test-files/file2.txt>
+        name.....: 'file2.txt'
+        dir......: 'test-files'
+        type.....: 'initial'
+        version..: 0
+`;
+
+exports[`mkdirpSync() should make a directory for an entry in a physical directory 1`] = `
+<test-files/dummyDir>
+    name.....: 'dummyDir'
+    dir......: 'test-files'
+    type.....: 'directory'
+    version..: 2
+    mode.....: 0o777
+    statCount: 0
+    readCount: 0
+`;
+
+exports[`mkdirpSync() should make a directory for an entry in a virtual directory 1`] = `
+<test-files/dummyDir/dummyDir2>
+    name.....: 'dummyDir2'
+    dir......: 'test-files/dummyDir'
+    type.....: 'directory'
+    version..: 2
+    mode.....: 0o777
+    statCount: 0
+    readCount: 0
+`;
+
+exports[`mkdirpSync() should make a directory for an entry, in a directory, that does not exist 1`] = `
+<test-files/dummyDir/dummyDir2>
+    name.....: 'dummyDir2'
+    dir......: 'test-files/dummyDir'
+    type.....: 'directory'
+    version..: 2
+    mode.....: 0o777
+    statCount: 0
+    readCount: 0
+`;

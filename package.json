@@ -1,0 +1,63 @@
+{
+    "name": "test-fs",
+    "version": "1.0.0",
+    "description": "An in-memory file system, that can read from the physical file system, but always writes to in-memory files and directories ",
+    "main": "lib/test-fs.js",
+    "types": "lib/test-fs.d.ts",
+    "scripts": {
+        "prebuild": "rimraf lib/*",
+        "build": "tsc --project src/tsconfig.build.json --pretty",
+        "test": "jest --ci --runInBand",
+        "watch": "jest --watch --notify",
+        "prereinstall": "rimraf node_modules",
+        "reinstall": "npm install"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/MortenHoustonLudvigsen/test-fs.git"
+    },
+    "keywords": [
+        "fs",
+        "memory",
+        "test"
+    ],
+    "author": "Morten Houston Ludvigsen",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/MortenHoustonLudvigsen/test-fs/issues"
+    },
+    "homepage": "https://github.com/MortenHoustonLudvigsen/test-fs#readme",
+    "jest": {
+        "testEnvironment": "node",
+        "transform": {
+            ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+        },
+        "globals": {
+            "ts-jest": {
+                "tsConfigFile": "src/tsconfig.json"
+            }
+        },
+        "moduleNameMapper": {
+            "^test-fs$": "<rootDir>/src/test-fs",
+            "^test-fs/(.*)$": "<rootDir>/src/$1"
+        },
+        "testRegex": "\\.specs\\.ts$",
+        "moduleFileExtensions": [
+            "ts",
+            "js",
+            "json",
+            "jsx"
+        ]
+    },
+    "devDependencies": {
+        "@types/jest": "^20.0.8",
+        "jest": "^20.0.4",
+        "pkg-dir": "^2.0.0",
+        "rimraf": "^2.6.1",
+        "ts-jest": "^20.0.10",
+        "typescript": "^2.4.2"
+    },
+    "dependencies": {
+        "@types/node": "^8.0.24"
+    }
+}

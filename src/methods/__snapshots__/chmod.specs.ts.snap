@@ -1,0 +1,157 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`chmod() should emit one 'chmod' event for a directory, that exists in the physical file system 1`] = `
+Array [
+  <test-files>
+    name.....: 'test-files'
+    dir......: '.'
+    type.....: 'directory'
+    version..: 1
+    mode.....: 0o123
+    statCount: 0
+    readCount: 0
+
+    <test-files/emptydir>
+        name.....: 'emptydir'
+        dir......: 'test-files'
+        type.....: 'initial'
+        version..: 0
+
+    <test-files/file.bin>
+        name.....: 'file.bin'
+        dir......: 'test-files'
+        type.....: 'initial'
+        version..: 0
+
+    <test-files/file.txt>
+        name.....: 'file.txt'
+        dir......: 'test-files'
+        type.....: 'initial'
+        version..: 0
+
+    <test-files/file2.txt>
+        name.....: 'file2.txt'
+        dir......: 'test-files'
+        type.....: 'initial'
+        version..: 0,
+]
+`;
+
+exports[`chmod() should emit one 'chmod' event for a file, that exists in the physical file system 1`] = `
+Array [
+  <test-files/file.txt>
+    name.....: 'file.txt'
+    dir......: 'test-files'
+    type.....: 'file'
+    version..: 1
+    mode.....: 0o234
+    statCount: 0
+    readCount: 0
+    contents.: 'This is a test file',
+]
+`;
+
+exports[`chmod() should emit one 'chmod' event for a virtual directory 1`] = `
+Array [
+  <test-files/dummyDir>
+    name.....: 'dummyDir'
+    dir......: 'test-files'
+    type.....: 'directory'
+    version..: 2
+    mode.....: 0o345
+    statCount: 0
+    readCount: 0,
+]
+`;
+
+exports[`chmod() should emit one 'chmod' event for a virtual file 1`] = `
+Array [
+  <test-files/dummy.txt>
+    name.....: 'dummy.txt'
+    dir......: 'test-files'
+    type.....: 'file'
+    version..: 2
+    mode.....: 0o456
+    statCount: 0
+    readCount: 0
+    contents.: <Buffer fe fd 2a 2b>,
+]
+`;
+
+exports[`chmodSync() should emit one 'chmod' event for a directory, that exists in the physical file system 1`] = `
+Array [
+  <test-files>
+    name.....: 'test-files'
+    dir......: '.'
+    type.....: 'directory'
+    version..: 1
+    mode.....: 0o123
+    statCount: 0
+    readCount: 0
+
+    <test-files/emptydir>
+        name.....: 'emptydir'
+        dir......: 'test-files'
+        type.....: 'initial'
+        version..: 0
+
+    <test-files/file.bin>
+        name.....: 'file.bin'
+        dir......: 'test-files'
+        type.....: 'initial'
+        version..: 0
+
+    <test-files/file.txt>
+        name.....: 'file.txt'
+        dir......: 'test-files'
+        type.....: 'initial'
+        version..: 0
+
+    <test-files/file2.txt>
+        name.....: 'file2.txt'
+        dir......: 'test-files'
+        type.....: 'initial'
+        version..: 0,
+]
+`;
+
+exports[`chmodSync() should emit one 'chmod' event for a file, that exists in the physical file system 1`] = `
+Array [
+  <test-files/file.txt>
+    name.....: 'file.txt'
+    dir......: 'test-files'
+    type.....: 'file'
+    version..: 1
+    mode.....: 0o234
+    statCount: 0
+    readCount: 0
+    contents.: 'This is a test file',
+]
+`;
+
+exports[`chmodSync() should emit one 'chmod' event for a virtual directory 1`] = `
+Array [
+  <test-files/dummyDir>
+    name.....: 'dummyDir'
+    dir......: 'test-files'
+    type.....: 'directory'
+    version..: 2
+    mode.....: 0o345
+    statCount: 0
+    readCount: 0,
+]
+`;
+
+exports[`chmodSync() should emit one 'chmod' event for a virtual file 1`] = `
+Array [
+  <test-files/dummy.txt>
+    name.....: 'dummy.txt'
+    dir......: 'test-files'
+    type.....: 'file'
+    version..: 2
+    mode.....: 0o456
+    statCount: 0
+    readCount: 0
+    contents.: <Buffer fe fd 2a 2b>,
+]
+`;

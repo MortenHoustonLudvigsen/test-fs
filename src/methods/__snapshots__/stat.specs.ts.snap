@@ -1,0 +1,297 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`stat() should emit one 'stat' event for a directory, that exists in the physical file system 1`] = `
+Array [
+  <test-files>
+    name.....: 'test-files'
+    dir......: '.'
+    type.....: 'directory'
+    version..: 1
+    mode.....: 0o40666
+    statCount: 1
+    readCount: 0
+
+    <test-files/emptydir>
+        name.....: 'emptydir'
+        dir......: 'test-files'
+        type.....: 'initial'
+        version..: 0
+
+    <test-files/file.bin>
+        name.....: 'file.bin'
+        dir......: 'test-files'
+        type.....: 'initial'
+        version..: 0
+
+    <test-files/file.txt>
+        name.....: 'file.txt'
+        dir......: 'test-files'
+        type.....: 'initial'
+        version..: 0
+
+    <test-files/file2.txt>
+        name.....: 'file2.txt'
+        dir......: 'test-files'
+        type.....: 'initial'
+        version..: 0,
+]
+`;
+
+exports[`stat() should emit one 'stat' event for a file, that exists in the physical file system 1`] = `
+Array [
+  <test-files/file.txt>
+    name.....: 'file.txt'
+    dir......: 'test-files'
+    type.....: 'file'
+    version..: 1
+    mode.....: 0o100666
+    statCount: 1
+    readCount: 0
+    contents.: 'This is a test file',
+]
+`;
+
+exports[`stat() should emit one 'stat' event for a virtual directory 1`] = `
+Array [
+  <test-files/dummyDir>
+    name.....: 'dummyDir'
+    dir......: 'test-files'
+    type.....: 'directory'
+    version..: 2
+    mode.....: 0o777
+    statCount: 1
+    readCount: 0,
+]
+`;
+
+exports[`stat() should emit one 'stat' event for a virtual file 1`] = `
+Array [
+  <test-files/dummy.txt>
+    name.....: 'dummy.txt'
+    dir......: 'test-files'
+    type.....: 'file'
+    version..: 2
+    mode.....: 0o777
+    statCount: 1
+    readCount: 0
+    contents.: <Buffer fe fd 2a 2b>,
+]
+`;
+
+exports[`stat() should return stats for a directory, that exists in the physical file system 1`] = `
+<test-files>
+    name.....: 'test-files'
+    dir......: '.'
+    type.....: 'directory'
+    version..: 1
+    mode.....: 0o40666
+    statCount: 1
+    readCount: 0
+
+    <test-files/emptydir>
+        name.....: 'emptydir'
+        dir......: 'test-files'
+        type.....: 'initial'
+        version..: 0
+
+    <test-files/file.bin>
+        name.....: 'file.bin'
+        dir......: 'test-files'
+        type.....: 'initial'
+        version..: 0
+
+    <test-files/file.txt>
+        name.....: 'file.txt'
+        dir......: 'test-files'
+        type.....: 'initial'
+        version..: 0
+
+    <test-files/file2.txt>
+        name.....: 'file2.txt'
+        dir......: 'test-files'
+        type.....: 'initial'
+        version..: 0
+`;
+
+exports[`stat() should return stats for a file, that exists in the physical file system 1`] = `
+<test-files/file.txt>
+    name.....: 'file.txt'
+    dir......: 'test-files'
+    type.....: 'file'
+    version..: 1
+    mode.....: 0o100666
+    statCount: 1
+    readCount: 0
+    contents.: 'This is a test file'
+`;
+
+exports[`stat() should return stats for a virtual directory 1`] = `
+<test-files/dummyDir>
+    name.....: 'dummyDir'
+    dir......: 'test-files'
+    type.....: 'directory'
+    version..: 2
+    mode.....: 0o777
+    statCount: 1
+    readCount: 0
+`;
+
+exports[`stat() should return stats for a virtual file 1`] = `
+<test-files/dummy.txt>
+    name.....: 'dummy.txt'
+    dir......: 'test-files'
+    type.....: 'file'
+    version..: 2
+    mode.....: 0o777
+    statCount: 1
+    readCount: 0
+    contents.: <Buffer fe fd 2a 2b>
+`;
+
+exports[`statSync() should emit one 'stat' event for a directory, that exists in the physical file system 1`] = `
+Array [
+  <test-files>
+    name.....: 'test-files'
+    dir......: '.'
+    type.....: 'directory'
+    version..: 1
+    mode.....: 0o40666
+    statCount: 1
+    readCount: 0
+
+    <test-files/emptydir>
+        name.....: 'emptydir'
+        dir......: 'test-files'
+        type.....: 'initial'
+        version..: 0
+
+    <test-files/file.bin>
+        name.....: 'file.bin'
+        dir......: 'test-files'
+        type.....: 'initial'
+        version..: 0
+
+    <test-files/file.txt>
+        name.....: 'file.txt'
+        dir......: 'test-files'
+        type.....: 'initial'
+        version..: 0
+
+    <test-files/file2.txt>
+        name.....: 'file2.txt'
+        dir......: 'test-files'
+        type.....: 'initial'
+        version..: 0,
+]
+`;
+
+exports[`statSync() should emit one 'stat' event for a file, that exists in the physical file system 1`] = `
+Array [
+  <test-files/file.txt>
+    name.....: 'file.txt'
+    dir......: 'test-files'
+    type.....: 'file'
+    version..: 1
+    mode.....: 0o100666
+    statCount: 1
+    readCount: 0
+    contents.: 'This is a test file',
+]
+`;
+
+exports[`statSync() should emit one 'stat' event for a virtual directory 1`] = `
+Array [
+  <test-files/dummyDir>
+    name.....: 'dummyDir'
+    dir......: 'test-files'
+    type.....: 'directory'
+    version..: 2
+    mode.....: 0o777
+    statCount: 1
+    readCount: 0,
+]
+`;
+
+exports[`statSync() should emit one 'stat' event for a virtual file 1`] = `
+Array [
+  <test-files/dummy.txt>
+    name.....: 'dummy.txt'
+    dir......: 'test-files'
+    type.....: 'file'
+    version..: 2
+    mode.....: 0o777
+    statCount: 1
+    readCount: 0
+    contents.: <Buffer fe fd 2a 2b>,
+]
+`;
+
+exports[`statSync() should return stats for a directory, that exists in the physical file system 1`] = `
+<test-files>
+    name.....: 'test-files'
+    dir......: '.'
+    type.....: 'directory'
+    version..: 1
+    mode.....: 0o40666
+    statCount: 1
+    readCount: 0
+
+    <test-files/emptydir>
+        name.....: 'emptydir'
+        dir......: 'test-files'
+        type.....: 'initial'
+        version..: 0
+
+    <test-files/file.bin>
+        name.....: 'file.bin'
+        dir......: 'test-files'
+        type.....: 'initial'
+        version..: 0
+
+    <test-files/file.txt>
+        name.....: 'file.txt'
+        dir......: 'test-files'
+        type.....: 'initial'
+        version..: 0
+
+    <test-files/file2.txt>
+        name.....: 'file2.txt'
+        dir......: 'test-files'
+        type.....: 'initial'
+        version..: 0
+`;
+
+exports[`statSync() should return stats for a file, that exists in the physical file system 1`] = `
+<test-files/file.txt>
+    name.....: 'file.txt'
+    dir......: 'test-files'
+    type.....: 'file'
+    version..: 1
+    mode.....: 0o100666
+    statCount: 1
+    readCount: 0
+    contents.: 'This is a test file'
+`;
+
+exports[`statSync() should return stats for a virtual directory 1`] = `
+<test-files/dummyDir>
+    name.....: 'dummyDir'
+    dir......: 'test-files'
+    type.....: 'directory'
+    version..: 2
+    mode.....: 0o777
+    statCount: 1
+    readCount: 0
+`;
+
+exports[`statSync() should return stats for a virtual file 1`] = `
+<test-files/dummy.txt>
+    name.....: 'dummy.txt'
+    dir......: 'test-files'
+    type.....: 'file'
+    version..: 2
+    mode.....: 0o777
+    statCount: 1
+    readCount: 0
+    contents.: <Buffer fe fd 2a 2b>
+`;

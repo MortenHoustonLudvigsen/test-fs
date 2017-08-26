@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`readFile() should emit one 'readFile' event for a file, that exists in the physical file system 1`] = `
+Array [
+  <test-files/file.txt>
+    name.....: 'file.txt'
+    dir......: 'test-files'
+    type.....: 'file'
+    version..: 1
+    mode.....: 0o100666
+    statCount: 0
+    readCount: 1
+    contents.: 'This is a test file',
+]
+`;
+
+exports[`readFile() should emit one 'readFile' event for a virtual file 1`] = `
+Array [
+  <test-files/dummy.txt>
+    name.....: 'dummy.txt'
+    dir......: 'test-files'
+    type.....: 'file'
+    version..: 2
+    mode.....: 0o777
+    statCount: 0
+    readCount: 1
+    contents.: <Buffer fe fd 2a 2b>,
+]
+`;
+
+exports[`readFile() should return contents for a file, that exists in the physical file system 1`] = `"This is a test file"`;
+
+exports[`readFile() should return contents for a virtual file 1`] = `
+Object {
+  "data": [254,253,42,43],
+  "type": "Buffer",
+}
+`;
+
+exports[`readFileSync() should emit one 'readFile' event for a file, that exists in the physical file system 1`] = `
+Array [
+  <test-files/file.txt>
+    name.....: 'file.txt'
+    dir......: 'test-files'
+    type.....: 'file'
+    version..: 1
+    mode.....: 0o100666
+    statCount: 0
+    readCount: 1
+    contents.: 'This is a test file',
+]
+`;
+
+exports[`readFileSync() should emit one 'readFile' event for a virtual file 1`] = `
+Array [
+  <test-files/dummy.txt>
+    name.....: 'dummy.txt'
+    dir......: 'test-files'
+    type.....: 'file'
+    version..: 2
+    mode.....: 0o777
+    statCount: 0
+    readCount: 1
+    contents.: <Buffer fe fd 2a 2b>,
+]
+`;
+
+exports[`readFileSync() should return contents for a file, that exists in the physical file system 1`] = `"This is a test file"`;
+
+exports[`readFileSync() should return contents for a virtual file 1`] = `
+Object {
+  "data": [254,253,42,43],
+  "type": "Buffer",
+}
+`;

@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`mkdir() should emit one 'mkdir' event for an entry in a physical directory 1`] = `
+Array [
+  <test-files/dummyDir>
+    name.....: 'dummyDir'
+    dir......: 'test-files'
+    type.....: 'directory'
+    version..: 2
+    mode.....: 0o777
+    statCount: 0
+    readCount: 0,
+]
+`;
+
+exports[`mkdir() should emit one 'mkdir' event for an entry in a virtual directory 1`] = `
+Array [
+  <test-files/dummyDir/dummyDir2>
+    name.....: 'dummyDir2'
+    dir......: 'test-files/dummyDir'
+    type.....: 'directory'
+    version..: 2
+    mode.....: 0o777
+    statCount: 0
+    readCount: 0,
+]
+`;
+
+exports[`mkdir() should make a directory for  an entry in a physical directory 1`] = `
+<test-files/dummyDir>
+    name.....: 'dummyDir'
+    dir......: 'test-files'
+    type.....: 'directory'
+    version..: 2
+    mode.....: 0o777
+    statCount: 0
+    readCount: 0
+`;
+
+exports[`mkdir() should make a directory for  an entry in a virtual directory 1`] = `
+<test-files/dummyDir/dummyDir2>
+    name.....: 'dummyDir2'
+    dir......: 'test-files/dummyDir'
+    type.....: 'directory'
+    version..: 2
+    mode.....: 0o777
+    statCount: 0
+    readCount: 0
+`;
+
+exports[`mkdirSync() should emit one 'mkdir' event for an entry in a physical directory 1`] = `
+Array [
+  <test-files/dummyDir>
+    name.....: 'dummyDir'
+    dir......: 'test-files'
+    type.....: 'directory'
+    version..: 2
+    mode.....: 0o777
+    statCount: 0
+    readCount: 0,
+]
+`;
+
+exports[`mkdirSync() should emit one 'mkdir' event for an entry in a virtual directory 1`] = `
+Array [
+  <test-files/dummyDir/dummyDir2>
+    name.....: 'dummyDir2'
+    dir......: 'test-files/dummyDir'
+    type.....: 'directory'
+    version..: 2
+    mode.....: 0o777
+    statCount: 0
+    readCount: 0,
+]
+`;
+
+exports[`mkdirSync() should make a directory for  an entry in a physical directory 1`] = `
+<test-files/dummyDir>
+    name.....: 'dummyDir'
+    dir......: 'test-files'
+    type.....: 'directory'
+    version..: 2
+    mode.....: 0o777
+    statCount: 0
+    readCount: 0
+`;
+
+exports[`mkdirSync() should make a directory for  an entry in a virtual directory 1`] = `
+<test-files/dummyDir/dummyDir2>
+    name.....: 'dummyDir2'
+    dir......: 'test-files/dummyDir'
+    type.....: 'directory'
+    version..: 2
+    mode.....: 0o777
+    statCount: 0
+    readCount: 0
+`;

@@ -1,0 +1,215 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`readdir() should emit one 'readdir' event for a directory, that exists in the physical file system 1`] = `
+Array [
+  <test-files>
+    name.....: 'test-files'
+    dir......: '.'
+    type.....: 'directory'
+    version..: 2
+    mode.....: 0o40666
+    statCount: 0
+    readCount: 1
+
+    <test-files/emptydir>
+        name.....: 'emptydir'
+        dir......: 'test-files'
+        type.....: 'directory'
+        version..: 1
+        mode.....: 0o40666
+        statCount: 0
+        readCount: 0
+
+    <test-files/file.bin>
+        name.....: 'file.bin'
+        dir......: 'test-files'
+        type.....: 'file'
+        version..: 1
+        mode.....: 0o100666
+        statCount: 0
+        readCount: 0
+        contents.: <Buffer ff 2a fe 2b fd 2c>
+
+    <test-files/file.txt>
+        name.....: 'file.txt'
+        dir......: 'test-files'
+        type.....: 'file'
+        version..: 1
+        mode.....: 0o100666
+        statCount: 0
+        readCount: 0
+        contents.: 'This is a test file'
+
+    <test-files/file2.txt>
+        name.....: 'file2.txt'
+        dir......: 'test-files'
+        type.....: 'file'
+        version..: 1
+        mode.....: 0o100666
+        statCount: 0
+        readCount: 0
+        contents.: 'This is also a test file',
+]
+`;
+
+exports[`readdir() should emit one 'readdir' event for a virtual directory 1`] = `
+Array [
+  <test-files/dummyDir>
+    name.....: 'dummyDir'
+    dir......: 'test-files'
+    type.....: 'directory'
+    version..: 2
+    mode.....: 0o777
+    statCount: 0
+    readCount: 1,
+]
+`;
+
+exports[`readdir() should return entries for a directory, that exists in the physical file system 1`] = `
+Object {
+  "emptydir": <test-files/emptydir>
+    name.....: 'emptydir'
+    dir......: 'test-files'
+    type.....: 'directory'
+    version..: 1
+    mode.....: 0o40666
+    statCount: 0
+    readCount: 0,
+  "file.bin": <test-files/file.bin>
+    name.....: 'file.bin'
+    dir......: 'test-files'
+    type.....: 'file'
+    version..: 1
+    mode.....: 0o100666
+    statCount: 0
+    readCount: 0
+    contents.: <Buffer ff 2a fe 2b fd 2c>,
+  "file.txt": <test-files/file.txt>
+    name.....: 'file.txt'
+    dir......: 'test-files'
+    type.....: 'file'
+    version..: 1
+    mode.....: 0o100666
+    statCount: 0
+    readCount: 0
+    contents.: 'This is a test file',
+  "file2.txt": <test-files/file2.txt>
+    name.....: 'file2.txt'
+    dir......: 'test-files'
+    type.....: 'file'
+    version..: 1
+    mode.....: 0o100666
+    statCount: 0
+    readCount: 0
+    contents.: 'This is also a test file',
+}
+`;
+
+exports[`readdir() should return entries for a virtual directory 1`] = `Object {}`;
+
+exports[`readdirSync() should emit one 'readdir' event for a directory, that exists in the physical file system 1`] = `
+Array [
+  <test-files>
+    name.....: 'test-files'
+    dir......: '.'
+    type.....: 'directory'
+    version..: 2
+    mode.....: 0o40666
+    statCount: 0
+    readCount: 1
+
+    <test-files/emptydir>
+        name.....: 'emptydir'
+        dir......: 'test-files'
+        type.....: 'directory'
+        version..: 1
+        mode.....: 0o40666
+        statCount: 0
+        readCount: 0
+
+    <test-files/file.bin>
+        name.....: 'file.bin'
+        dir......: 'test-files'
+        type.....: 'file'
+        version..: 1
+        mode.....: 0o100666
+        statCount: 0
+        readCount: 0
+        contents.: <Buffer ff 2a fe 2b fd 2c>
+
+    <test-files/file.txt>
+        name.....: 'file.txt'
+        dir......: 'test-files'
+        type.....: 'file'
+        version..: 1
+        mode.....: 0o100666
+        statCount: 0
+        readCount: 0
+        contents.: 'This is a test file'
+
+    <test-files/file2.txt>
+        name.....: 'file2.txt'
+        dir......: 'test-files'
+        type.....: 'file'
+        version..: 1
+        mode.....: 0o100666
+        statCount: 0
+        readCount: 0
+        contents.: 'This is also a test file',
+]
+`;
+
+exports[`readdirSync() should emit one 'readdir' event for a virtual directory 1`] = `
+Array [
+  <test-files/dummyDir>
+    name.....: 'dummyDir'
+    dir......: 'test-files'
+    type.....: 'directory'
+    version..: 2
+    mode.....: 0o777
+    statCount: 0
+    readCount: 1,
+]
+`;
+
+exports[`readdirSync() should return entries for a directory, that exists in the physical file system 1`] = `
+Object {
+  "emptydir": <test-files/emptydir>
+    name.....: 'emptydir'
+    dir......: 'test-files'
+    type.....: 'directory'
+    version..: 1
+    mode.....: 0o40666
+    statCount: 0
+    readCount: 0,
+  "file.bin": <test-files/file.bin>
+    name.....: 'file.bin'
+    dir......: 'test-files'
+    type.....: 'file'
+    version..: 1
+    mode.....: 0o100666
+    statCount: 0
+    readCount: 0
+    contents.: <Buffer ff 2a fe 2b fd 2c>,
+  "file.txt": <test-files/file.txt>
+    name.....: 'file.txt'
+    dir......: 'test-files'
+    type.....: 'file'
+    version..: 1
+    mode.....: 0o100666
+    statCount: 0
+    readCount: 0
+    contents.: 'This is a test file',
+  "file2.txt": <test-files/file2.txt>
+    name.....: 'file2.txt'
+    dir......: 'test-files'
+    type.....: 'file'
+    version..: 1
+    mode.....: 0o100666
+    statCount: 0
+    readCount: 0
+    contents.: 'This is also a test file',
+}
+`;
+
+exports[`readdirSync() should return entries for a virtual directory 1`] = `Object {}`;
